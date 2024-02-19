@@ -5,7 +5,7 @@ export const FieldLayout = ({ field, handleClick }) => {
 		<div className={styles.fields} onClick={handleClick}>
 			{field.map((item, index) => (
 				<div
-					className={`${styles.field} ${item ? styles.isClicked : ''}`}
+					className={`${styles.field} ${item ? 'isClicked' : ''}`}
 					key={index}
 					id={index}
 				>
