@@ -21,3 +21,7 @@ button {
 	font-family: inherit;
 	font-size: 1.5rem;
 }
+
+button:hover {
+	box-shadow: 4px 4px 100px 80px rgba(212, 214, 216, 0.2) inset;
+}

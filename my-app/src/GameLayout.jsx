@@ -25,7 +25,7 @@ export const GameLayout = ({
 			/>
 			<FieldContainer field={field} handleClick={handleClick} />
 			<button className={styles.btn} onClick={handleResetButton}>
-				Начать заного
+				Начать заново
 			</button>
 		</div>
 	);
