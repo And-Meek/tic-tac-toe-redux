@@ -20,9 +20,14 @@ export const App = () => {
 						setCurrentPlayer(currentPlayer);
 						setIsGameEnded(true);
 					}
-					if (![...newField].includes('') && isGameEnded === false) {
+					if (![...newField].includes('') && !isWinners([...newField], currentPlayer)) {
 						setIsDraw(true);
 					}
+					if (![...newField].includes('') && isWinners([...newField], currentPlayer)) {
+						setCurrentPlayer(currentPlayer);
+						setIsGameEnded(true);
+					}
+
 					return newField;
 				});
 				setCurrentPlayer(currentPlayer === 'X' ? '0' : 'X');
