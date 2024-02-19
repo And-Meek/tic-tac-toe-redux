@@ -1,0 +1,27 @@
+.fields {
+	background-color: inherit;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.field {
+	border-radius: 20px;
+	border-color: aliceblue;
+	border-style: solid;
+	display: flex;
+	background-color: inherit;
+	width: 4rem;
+	height: 4rem;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	transition: 0.4s;
+}
+.field:hover {
+	cursor: pointer;
+	box-shadow: 4px 4px 100px 80px rgba(212, 214, 216, 0.2) inset;
+}
