@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 import styles from './Field.module.css';
-export const FieldLayout = ({ field, handleClick }) => {
+import { store } from '../../store';
+
+export const FieldLayout = ({ handleClick }) => {
+	const { field } = store.getState();
 	return (
 		<div className={styles.fields} onClick={handleClick}>
 			{field.map((item, index) => (

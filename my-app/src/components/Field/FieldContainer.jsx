@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { FieldLayout } from './FieldLayout';
 
-export const FieldContainer = ({ field, handleClick }) => {
-	return <FieldLayout field={field} handleClick={handleClick} />;
+export const FieldContainer = ({ handleClick }) => {
+	return <FieldLayout handleClick={handleClick} />;
 };
 
 FieldContainer.propTypes = {
